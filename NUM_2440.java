@@ -7,6 +7,7 @@ public class NUM_2440 {
 		int A = sc.nextInt();
 		String [] arr = new String [A]; 
 		String star = "*";
+		
 		for(int i=0; i<arr.length; i++) {
 			arr [i] = star;
 			star += "*";
