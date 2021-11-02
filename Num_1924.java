@@ -4,7 +4,7 @@ public class Num_1924 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int a [] = {0,31,28,31,30,31,30,31,31,30,31,30};
+		int a [] = {0,31,28,31,30,31,30,31,31,30,31,30};		
 		String b [] = {"MON","TUE", "WED", "THU", "FRI", "SAT", "SUN"};
 		int M = sc.nextInt();
 		int D = sc.nextInt();
@@ -12,7 +12,7 @@ public class Num_1924 {
 		for (int i=0; i<M; i++) {
 			sum +=a[i];
 		}
-		sum += D-1;
+		sum += D-1;		//배열은 0부터 시작이므로 -1를 해준다.
 		System.out.println(b[sum%7]);
 	}
 
